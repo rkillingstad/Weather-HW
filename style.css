@@ -1,0 +1,87 @@
+body {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    display: block;
+    background: darkslategray;
+    color: white;
+    font-size: 2rem;
+}
+
+#search {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    left: 0%;
+}
+
+#weather {
+    width: 75%;
+    display: inline-block;
+    padding: 10px 0 0 20px;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    position: relative;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* padding: 2px; */
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.temp,
+.humidity,
+.wind,
+.UV {
+    padding: 5px;
+}
+
+.date {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
+
+.city {
+    display: inline-block;
+}
